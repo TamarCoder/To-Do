@@ -1,5 +1,7 @@
 import styles from './Main.module.scss';
 
 export default function Main() {
-    <main className={styles.mainContainer}></main>
+     return (
+        <main className={styles.mainContainer}></main>
+     )
 }
