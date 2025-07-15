@@ -1,0 +1,27 @@
+@import '/app/colors.scss';
+@import '/app/spacing.scss';
+@import '/app/media.scss';
+
+
+.asideContainer {
+  width: 300px;
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
+
+  @media (max-width: $breakpoint-desktop) {
+    width: 250px;
+    padding: 20px;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ddd;
+    padding: 16px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 12px;
+  }
+}
