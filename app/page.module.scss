@@ -1,6 +1,6 @@
-@import '/colors.scss';
-@import '/spacing.scss';
-@import '/media.scss';
+@import '../app/colors.scss';
+@import '../app/media.scss';
+@import '../app/spacing.scss';
  
 html, body {
   font-family: 'Inter', sans-serif;  
@@ -13,14 +13,14 @@ html, body {
   min-height: 100vh;
 }
 
-button {
+.button {
   cursor: pointer;
   font-family: inherit;
   background: none;
   border: none;
 }
 
-input, textarea {
+.input, .textarea {
   font-family: inherit;
   outline: none;
   border: 1px solid $gray-300;
@@ -29,10 +29,14 @@ input, textarea {
 }
 
 .contentWrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 32px 48px;  
-  
+  min-height: 100vh;
+  background-image: url('/mainCover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 32px 48px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: $breakpoint-desktop) {
     padding: 24px 32px;  
