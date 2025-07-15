@@ -12,12 +12,12 @@
   border-radius: 50px;
 
   @media (min-width: $breakpoint-large-desktop) {
-    padding: 48px 96px;
+    padding: 48px 40px;
     flex-direction: row;
   }
 
   @media (max-width: $breakpoint-large-desktop) and (min-width: $breakpoint-desktop) {
-    padding: 32px 64px;
+    padding: 48px 40px;
     flex-direction: row;
   }
 
@@ -38,7 +38,7 @@
 
 .aside {
   width: 240px;
-  background-color: green;
+  background-color: $white;
   padding: 16px;
   flex-shrink: 0;
   border-radius: 24px;
@@ -53,7 +53,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
+  margin-left: 10px;
 
   @media (max-width: $breakpoint-desktop) {
     margin-left: 0;
@@ -62,7 +62,7 @@
 
 .header {
   height: 64px;
-  background-color:violet;
+  background-color: $white;
   padding: 16px;
   border-radius: 16px;
   margin-bottom: 16px;
@@ -70,7 +70,7 @@
 
 .main {
   flex: 1;
-  background-color: yellow;
+  background-color: $white;
   padding: 24px;
   border-radius: 16px;
   overflow-y: auto;
