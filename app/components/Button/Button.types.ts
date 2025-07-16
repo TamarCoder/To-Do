@@ -1,19 +1,7 @@
-export enum ButtonVariant {
-  default = 'default', 
-  primary = 'primary', 
-  secondary = 'secondary', 
-  outline = 'outline',  
-  ghost = 'ghost', 
-  danger = 'danger',
-  success = 'success'
-}
+export type ButtonVariant =  'default' | 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' | 'success'
 
-export enum ButtonSize  {
-   sm  = 'sm',
-   md = 'md', 
-   lg = 'lg',
-}
-
+export type ButtonSize   =  'sm' |  'md' | 'lg';
+   
 export enum ButtonType {
   button= 'button',
   submit='submit',
