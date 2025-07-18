@@ -1,4 +1,4 @@
-import Aside from "../aside/Aside";
+import Aside from "../Aside/Aside";
 import Button from "../Button/Button";
 import { ButtonSize, ButtonType, ButtonVariant } from "../Button/Button.types";
 import Header from "../Header/Header";
@@ -11,7 +11,7 @@ export default function App() {
         <Aside/>
       <div className={styles.contentArea}>
          <Header/>
-         <Main/>
+        
       </div>
     </div>
   );
