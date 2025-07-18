@@ -1,0 +1,27 @@
+@import '..//..//..//colors.scss';
+@import '..//..//..//media.scss';
+@import '..//..//../spacing.scss';
+
+
+
+.cardsContainer {
+  padding: 24px;
+  border-radius: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    padding: 20px;
+    gap: 24px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 16px;
+    gap: 16px;
+  }
+}

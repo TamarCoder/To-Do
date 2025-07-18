@@ -8,6 +8,8 @@
   padding: 24px;
   border-radius: 16px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: $breakpoint-desktop) {
     padding: 24px 32px;
@@ -20,4 +22,37 @@
   @media (max-width: $breakpoint-mobile) {
     padding: 12px 16px;
   }
+}
+
+.rigthSide {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media (max-width: $breakpoint-tablet) {
+    gap: 32px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    gap: 24px;
+  }
+}
+
+.calendarSize {
+  -webkit-box-shadow: 1px 0px 18px -3px rgba(73, 79, 150, 0.2);
+  -moz-box-shadow: 1px 0px 18px -3px rgba(73, 79, 150, 0.2);
+  box-shadow: 1px 0px 18px -3px rgba(73, 79, 150, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 12px;
+    box-shadow: 0px 0px 10px rgba(73, 79, 150, 0.1);
+  }
+}
+
+.gapWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

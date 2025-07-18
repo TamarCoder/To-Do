@@ -1,9 +1,9 @@
 import styles from "./Button.module.scss";
-import { ButtonProps, ButtonSize, ButtonVariant } from "./Button.types";
+import { ButtonProps,} from "./Button.types";
 
 export default function Button(props: ButtonProps) {
-  const variant = props.variant ?? ButtonVariant.default;
-  const size = props.size ?? ButtonSize.md;
+  const variant = props.variant ?? 'default';
+  const size = props.size ?? 'md';
 
   const buttonClasses = [
     styles.container,

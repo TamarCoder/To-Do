@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=My+Soul&display=swap');
 @import "../../colors.scss";
 @import "../../spacing.scss";
 @import "../../media.scss";
 
 .headerContainer {
-  height: 64px;
   background-color: $white;
   padding: 16px;
   border-radius: 16px;
@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $white;
 
   @media (max-width: $breakpoint-desktop) {
     padding: 20px 32px;
@@ -19,12 +18,61 @@
 
   @media (max-width: $breakpoint-tablet) {
     padding: 16px 24px;
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
   }
 
   @media (max-width: $breakpoint-mobile) {
     padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
+  }
+}
+
+.headerHeading {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+}
+
+.heading {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 16px;
+  }
+}
+
+.headtingText {
+  font-size: 15px;
+  color: $gray-400;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 13px;
+  }
+}
+
+.headerAlert {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 40px;
+    height: 40px;
   }
 }
