@@ -1,8 +1,7 @@
-@import '..//..//..//colors.scss';
-@import '..//..//..//media.scss';
-@import '..//..//../spacing.scss';
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=My+Soul&display=swap");
+@import "..//..//..//colors.scss";
+@import "..//..//..//media.scss";
+@import "..//..//../spacing.scss";
 
 .cardsContainer {
   padding: 24px;
@@ -24,4 +23,14 @@
     padding: 16px;
     gap: 16px;
   }
+  
 }
+
+
+ .heading {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+  }

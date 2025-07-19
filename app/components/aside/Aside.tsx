@@ -15,7 +15,8 @@ export default function Aside() {
             <Link href="/">Dashboard</Link>
           </li>
           <li className={styles.listItem}>
-            <Link href="/Projects">Projects</Link>
+            <Link href="/project">Project</Link>
+             
           </li>
           <li className={styles.listItem}>Product</li>
           <li className={styles.listItem}>Order</li>

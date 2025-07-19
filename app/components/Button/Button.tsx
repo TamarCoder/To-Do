@@ -1,9 +1,9 @@
 import styles from "./Button.module.scss";
-import { ButtonProps,} from "./Button.types";
+import { ButtonProps } from "./Button.types";
 
 export default function Button(props: ButtonProps) {
-  const variant = props.variant ?? 'default';
-  const size = props.size ?? 'md';
+  const variant = props.variant ?? "default";
+  const size = props.size ?? "md";
 
   const buttonClasses = [
     styles.container,
@@ -19,10 +19,16 @@ export default function Button(props: ButtonProps) {
     }
   }
 
+  if (props.size) {
+    const sizeClass = styles[props.size];
+    if (sizeClass) {
+      buttonClasses.push(sizeClass);
+    }
+  }
+
   return (
     <>
-      <button className={buttonClasses.join(" ").trim()}>
-        {props.label}</button>
+      <button className={buttonClasses.join(" ").trim()}>{props.label}</button>
     </>
   );
 }

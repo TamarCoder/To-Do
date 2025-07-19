@@ -1,4 +1,4 @@
-export type ButtonVariant =  'default' | 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' | 'success'
+export type ButtonVariant =  'default' | 'success' | 'error' | 'warning' | 'info' | 'purple';
 
 export type ButtonSize   =  'sm' |  'md' | 'lg';
    

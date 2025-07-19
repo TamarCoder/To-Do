@@ -10,6 +10,7 @@ type cardProps = {
 };
 
 export default function Card(props: cardProps) {
+  
   const progressBarStyle = {
     width: props.progresNumber,
   };
